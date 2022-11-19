@@ -12,7 +12,7 @@
 
     .nav-links {
         width: 40vw;
-        height: 54vh;
+        height: 58vh;
         text-align: left;
         background-color: black;
         list-style: none;
@@ -74,7 +74,7 @@
     }
 
     .footer {
-        margin: 5px 0px 0px 55px;
+        margin: 5px 0px 0px 50px;
         background-color: white;
         width: 255px;
         font-size: 18px;
