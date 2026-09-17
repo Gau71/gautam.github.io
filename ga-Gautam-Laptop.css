@@ -4,7 +4,43 @@
         scroll-behavior: smooth;
     }
     
-
+    .f{
+        margin-top: 45px;
+       display: flex;
+    }
+    .container1 {
+        display: flex;
+        display: inline-block;
+        cursor: pointer;
+        margin-left: 140px;
+        
+      }
+      
+      .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+      .container2 {
+        display: inline-block;
+        cursor: pointer;
+        
+      }
+      
+      .container2 .bar1 {
+        margin:  6px 5px;
+        transform: translate(0, 11px) rotate(-45deg);
+      }
+      
+      .container2 .bar2 {opacity: 0;
+        margin:  6px 5px;}
+      
+      .container2 .bar3 {
+        margin:  6px 5px;
+        transform: translate(0, -11px) rotate(45deg);
+      }
     .fa-bars {
         margin: 10px;
         font-size: 40px;
@@ -12,16 +48,16 @@
 
     .nav-links {
         width: 40vw;
-        height: 58vh;
+        height: 68vh;
         text-align: left;
         background-color: black;
         list-style: none;
-
+        display: block;
         position: absolute;
 
 
         top: 0;
-        left: -150px;
+        right:  -150px;
 
         z-index: 2;
 
@@ -33,7 +69,8 @@
     }
 
     .nav-links ul {
-        margin: 70px 10px 0px 5px;
+        margin: 45px 10px 0px 15px;
+        display: block;
     }
 
 
@@ -43,38 +80,40 @@
         font-size: 19px;
     }
 
-    p {
-        margin: 0px 0px 9px 9px;
+    .gautam{
+        margin: 5px 5px 0px 17px;
         color: white;
-        font-size: 12px;
-
+        font-size: 24px;
+display: none;
     }
-
+   
     .nav-links ul li {
-        margin: 8px 10px;
+        margin: 13px 10px;
         text-align: center;
         list-style-type: none;
         text-decoration: none;
 
 
     }
-
+.hg {
+    margin-left: 32px;
+}
     .nav-links ul li a {
         color: white;
         text-decoration: none;
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .nav-links ul li:hover {
-        background-color: #777;
+        background-color: brown;
         text-align: center;
-        width: 89px;
-        margin: 0px 0px 0px 20px;
+        width: fit-content;
+        margin: 0px 0px 0px 0px;
 
     }
 
     .footer {
-        margin: 5px 0px 0px 50px;
+        margin: 15px 0px 0px 50px;
         background-color: white;
         width: 255px;
         font-size: 18px;
@@ -113,15 +152,25 @@
 
 
     }
-
+.lo{
+    display: flex;
+    color: lavenderblush;
+    font-size: 24px;
+    margin: 0px 0px 0px 35px;
+    
+}
    
+    nav h3{
+    font-size: 20px;
+    }
+    
     
 
 
 
 
     .see {
-        background-color: gray;
+        background-color: brown;
         margin: 0px 130px;
         padding: 5px 5px;
         width: 80px;
@@ -138,49 +187,43 @@
 
 
     .see:hover {
-        border: 2px solid violet;
+        border: 2px solid white;
     }
 
     .prot:hover {
         border: 2px solid violet;
     }
 
-    .po img:hover {
-        border: 5px solid violet;
-    }
+    
 
-    .mg:hover {
-        border: 2px solid violet;
-    }
-
-
-
-
-    .po img {
-        display: inline-block;
-        width: 210px;
-        height: 210px;
-        margin: 6px 0px 6px 110px;
-        margin: 0px 0px 10px 70px;
-        border-radius: 110px;
-        border: 3px solid black;
-    }
+    
+    
+.ins{
+   
+    margin: 15px 0px 0px 50px;
+    width: 255px;
+    font-size: 18px;
+    border-radius: 4px;
+    border: 1px solid brown;
+    text-align: center;
 
 
+
+}
+
+    
     .po {
         margin: 0px 20px 0px 0px;
         display: grid
     }
 
     .mg {
-        width: 250px;
-        height: 250px;
-        background-color: gray;
+       
         display: grid;
-        margin: 30px 0px 10px 35px;
-        padding: 50px 20px;
-        border: 2px solid black;
-        border-radius: 10px;
+        margin: 30px 0px 10px 15px;
+        padding: 15px 20px;
+        font-size: 20px;
+       
     }
 
     .prot {
@@ -201,51 +244,50 @@
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 
-    .ab {
-        margin: 50px 10px 10px 30px;
-        border-radius: 5px;
-        width: 300px;
-        height: 500px;
-        border: 2px solid black;
+    
+    .sa{
+        display: block;
+        margin-bottom: 50px;
     }
+    .ab{
+        margin-top: 100px;
+    }
+    .ab img{
+        display: block;
+    }
+       
+    
+   .sa{
+    margin-top: 40px
+    
 
+  }
     .fon a {
         text-decoration: none;
-        color: black;
+        color: white;
     }
 
     .fon a:hover {
-        color: #777;
+        color: brown;
     }
 
     .fon {
-        width: 280px;
+        width: 320px;
         height: 600px;
-        margin: 50px 10px 10px 10px;
+        margin: 50px 10px 10px -10px;
         font-size: 20px;
-        background: rgba(255, 255, 255, 0.04);
+        
     }
 
     .ab h1 {
-        margin: 20px 30px 50px 68px;
+        margin: 20px 30px 20px 30px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', ' Geneva', Verdana, sans-serif;
     }
 
-    .skill-section {
-        margin: 50px 20px 10px 30px;
-        border: 2px solid black;
-        border-radius: 5px;
-        width: 300px;
-        height: 900px;
-        position: relative;
-
-
-
-    }
-
+    
     .heading {
-        margin: 20px 30px 30px 73px;
-        color: black;
+        margin: 100px 20px 30px 0px;
+        color: white;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', ' Geneva', Verdana, sans-serif;
     }
 
@@ -267,6 +309,7 @@
         margin: auto;
         height: 50px;
         width: 70px;
+        border: 1px solid brown;
     }
 
     .skill-name {
@@ -274,8 +317,8 @@
         font-weight: 100;
         text-align: center;
         text-transform: capitalize;
-        margin: 20px 0 10px;
-        color: black;
+        margin: 20px 10px 10px 10px;
+        color: white;
     }
 
     .skill-info {
@@ -283,7 +326,7 @@
         opacity: 0.5;
         font-size: 15px;
         line-height: 21px;
-        color: black;
+        color: white;
         margin: 0px 10px;
     }
 
@@ -342,18 +385,19 @@
 
 
     .mb {
-        margin: 50px 20px 10px 30px;
-        border: 2px solid black;
-        border-radius: 5px;
+        margin: 70px 20px 10px 30px;
+       
         width: 300px;
         height: 1230px;
         position: relative;
+        
+
 
     }
 
     .mb h1 {
         margin: 20px 5px 30px 20px;
-        color: black;
+        color: white;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', ' Geneva', Verdana, sans-serif;
         font-size: 25px;
     }
@@ -371,7 +415,7 @@
         height: 534px;
         width: 120px;
         margin: 5px;
-        border: 1.5px solid black;
+        border: 1.5px solid brown;
         position: relative;
 
     }
@@ -390,7 +434,7 @@
         text-align: center;
         text-transform: capitalize;
         margin: 15px 5px;
-        color: black;
+        color: white;
     }
 
     .project-info {
@@ -398,12 +442,12 @@
         opacity: 0.5;
         font-size: 15px;
         line-height: 20px;
-        color: black;
+        color: white;
         margin: 0px 10px 5px 10px;
     }
 
     .online {
-        margin: 10px 10px;
+        margin: 10px 9px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 5px;
@@ -411,14 +455,14 @@
     }
 
     .button {
-        height: 25px;
+        height: fit-content;
         width: 40px;
-        background-color: #222;
+       
         cursor: pointer;
         font-size: 10px;
         text-align: center;
         border-radius: 5px;
-
+padding: 2px;
         margin: 0px 2px 0px 3px;
 
 
@@ -441,12 +485,13 @@
     }
 
     .us {
-        height: 20px;
+        height: fit-content;
         width: 30px;
-        background-color: black;
+        background-color: darkred;
         cursor: pointer;
         font-size: 10px;
         text-align: center;
+        padding: 1px;
         border-radius: 5px;
 
         margin: 0px 3px 0px 0px;
@@ -458,11 +503,94 @@
     }
 
 
+
+
+
+
+    .mb1 {
+        margin: 70px 20px 10px 30px;
+       
+        width: 300px;
+        height: 1050px;
+        position: relative;
+        
+
+
+    }
+
+    .mb1 h1 {
+        margin: 20px 5px 30px 20px;
+        color: white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', ' Geneva', Verdana, sans-serif;
+        font-size: 25px;
+    }
+    .certificate-container {
+        width: 99%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        color: #fff;
+    }
+
+    .certificate1 {
+        height: 415px;
+        width: 120px;
+        margin: 5px;
+        border: 1.5px solid brown;
+        position: relative;
+
+    }
+
+    .certificate1-img {
+        display: block;
+        margin: auto;
+        height: 270px;
+        width: 120px;
+       
+    }
+    
+
+    .cer-name {
+        font-size: 14px;
+        font-weight: 150;
+        text-align: center;
+        text-transform: capitalize;
+        margin: 15px 5px;
+        color: white;
+    }
+
+    .online1 {
+        margin: 10px 35px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5px;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .kb {
         display: grid;
-        margin: 60px 0px 20px 10px;
-        border: 2px solid black;
-        border-radius: 10px;
+        margin: 0px 0px 20px 10px;
+        
         width: 300px;
         height: 500px;
 
@@ -470,7 +598,7 @@
     }
 
     .kb h1 {
-        margin: 20px 10px 25px 70px;
+        margin: 20px 10px 25px 0px;
 
     }
 
@@ -492,7 +620,7 @@
         background: transparent;
         border: none;
         outline: none;
-        color: #222;
+        color: white;
         font-size: 12px;
         font-family: 'poppins', sans-serif;
 
@@ -509,7 +637,7 @@
     }
 
     .field span {
-        color: #222;
+        color: white;
         width: 40px;
         line-height: 30px;
 
@@ -520,10 +648,10 @@
         height: 40px;
         width: 40%;
         display: grid;
-
+color: white;
         border-radius: 7px;
-        border: 2px solid violet;
-        margin: 50px 100px;
+        border: 2px solid blueviolet;
+        margin: 50px 75px;
         background-color: black;
 
     }
@@ -550,16 +678,7 @@
     }
 
 
-    .hg {
-        width: 100px;
-        height: 90px;
-        border: 2px solid violet;
-        margin: 27px 0px 0px 35px;
-        border-radius: 10px;
-        font-size: 16px;
-
-    }
-
+    
 
     .map {
         display: grid;
@@ -568,8 +687,9 @@
 
     .copy {
         color: black;
-        margin: 20px 10px 15px 14px;
+        margin: 20px 10px 15px 0px;
         font-size: 16px;
+        background-color:  white;
     }
 
     .fab {
@@ -598,5 +718,18 @@
     .gmap_iframe {
         width: 295px !important;
         height: 300px !important;
+    }
+
+    .ins1{
+   
+        margin: 15px 10px 15px 50px;
+        width: 255px;
+        font-size: 18px;
+        border-radius: 4px;
+        border: 1px solid brown;
+        text-align: center;
+    
+    
+    
     }
 }

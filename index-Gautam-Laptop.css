@@ -8,24 +8,40 @@ html {
 }
 
 
-
-.nav-links {
-    width: 20vw;
+body{
+    background-color: black;
+    background-image: url("1920x1080-black-w4sh3k4mi3fiygum.jpg");
+    background-repeat: no-repeat;
     height: 100vh;
+    
+}
+.hg img{
+    border-radius: 50px;
+}
+.nav-links h3{
+    display: flex;
+    margin: 20px 20px;
+    font-weight: 600;
+    font-size: 24px;
+}
+.nav-links {
+    width: 100vw;
+    height: 12vh;
     text-align: left;
     background-color: black;
     list-style: none;
     position: fixed;
-
+display: flex;
     top: 0;
 
     transition: 1s;
-    border: 1.5px solid black;
+    
 
 }
 
 .nav-links ul {
-    margin: 80px 20px 0px 20px;
+    margin: 20px 10px 0px 510px;
+    display: flex;
 }
 
 
@@ -34,14 +50,11 @@ html {
     padding: 10px 0px 5px 0px;
 }
 
-p {
-    margin: 0px 0px 5px 60px;
-    color: white;
 
-}
 
 .nav-links ul li {
-    margin: 28px 42px;
+    display: flex;
+    margin: 10px 12px;
     text-align: center;
     list-style-type: none;
     text-decoration: none;
@@ -56,14 +69,19 @@ p {
 }
 
 .nav-links ul li:hover {
-    background-color: #777;
+    background-color: brown;
     text-align: center;
-    width: 149px;
+
+    border-radius: 25px;
+    padding: 2px 8px;
+    width: fit-content;
+    height: fit-content;
+    transition: 0.1s;
 
 }
 
 .footer {
-    margin: 5px 0px 0px 650px;
+    margin: 5px 0px 0px 515px;
     background-color: white;
     width: 255px;
     font-size: 18px;
@@ -81,13 +99,13 @@ p {
 
 .footer:hover {
     background-color: #777;
-    border: 1px solid violet;
-
+    border: 1px solid blueviolet;
+    transition: 0.1s;
 
 }
 
 .footer:hover {
-    background-color: #777;
+    background-color: blueviolet;
 
 }
 
@@ -102,15 +120,22 @@ nav .fa {
 
 
 }
-
+nav .lo{
+    display: none;
+}
+.gautam{
+    color: lavenderblush;
+    margin: 20px 0px 5px 15px;
+    font-size: 27px;
+}
 
 
 
 .see {
-    background-color: gray;
-    margin: 0px 400px;
+    background-color: brown;
+    margin: 0px 547px;
     padding: 5px 5px;
-    width: 100px;
+    width: 180px;
     border-radius: 2px;
     text-align: center;
     border: 1px solid black;
@@ -124,22 +149,32 @@ nav .fa {
 
 
 .see:hover {
-    border: 2px solid violet;
+    border: 2px solid white;
+    transition: 0.1s;
 }
 
 .prot:hover {
-    border: 2px solid violet;
+    border: 2px solid blueviolet;
 }
 
 .po img:hover {
-    border: 5px solid violet;
-}
-
-.mg:hover {
-    border: 2px solid violet;
+    border: 5px solid blueviolet;
 }
 
 
+.ins{
+   
+        margin: 35px 0px 0px 515px;
+        
+        width: 255px;
+        font-size: 18px;
+        border-radius: 4px;
+        border: 1px solid brown;
+        text-align: center;
+    
+ 
+    
+}
 
 
 .po img {
@@ -154,20 +189,30 @@ nav .fa {
 
 
 .po {
-    margin: 70px 20px 0px 20px;
+    margin: 90px 20px 0px 20px;
     display: inline-flex;
+    color: white;
 
 }
 
 .mg {
-    width: 300px;
-    height: 300px;
-    background-color:gray;
+   
     display: inline-block;
-    margin: 60px 0px 10px 325px;
+    margin: 80px 0px 10px 385px;
     padding: 50px 30px;
-    border: 2px solid black;
-    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+   
+    
+}
+.mg h1{
+    letter-spacing: 4px;
+    font-family: sans-serif;
+    margin: 15px;
+}
+.mg h4,h3{
+    font-family: sans-serif;
+    margin: 20px 0px;
 }
 
 .prot {
@@ -184,54 +229,81 @@ h4 {
 }
 
 h2 {
+    
     font-size: 35px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .ab {
-    margin: 50px 100px 10px 307px;
-    border-radius: 10px;
-    width: 996px;
+    margin: 230px 0px 0px 0px;
+   
+    width: 100vw;
     height: 600px;
-    border: 3px solid black;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
+}
+.sa{
+    display: flex;
+    margin: 120px 50px;
+}
+.ab img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 1px solid brown;
 }
 
 .fon a {
     text-decoration: none;
-    color: black;
+    color: brown;
 }
 
-.fon a:hover {
-    color: #777;
-}
+
 
 .fon {
-    width: 800px;
+    width: 1000px;
     height: 400px;
-    margin: 100px 10px 100px 95px;
+    margin: 0px 10px 50px 100px;
     font-size: 31px;
-    background: rgba(255, 255, 255, 0.04);
+    
 }
 
 .ab h1 {
-    margin: 20px 300px 50px 400px;
+  
+    text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', ' Geneva', Verdana, sans-serif;
 }
 
+
+
+
+
+
+
+
+
+
+/* skill section **************************************************** */
+
 .skill-section {
-    margin: 50px 20px 10px 305px;
-    border: 3px solid black;
-    border-radius: 10px;
-    width: 1000px;
+    margin: 50px 0px;
+    text-align: center;
+    
+    
+   
+    width: 100vw;
     height: 650px;
     position: relative;
+    color: white;
     
 
 }
 
 .heading {
-    margin: 20px 300px 30px 420px;
-    color: black;
+    margin: 20px  0px 150px 0px;
+    text-align: center;
+    color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', ' Geneva', Verdana, sans-serif;
 }
 
@@ -241,7 +313,7 @@ h2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
-    color: #fff;
+    color: white;
 }
 
 .skill-card {
@@ -253,6 +325,7 @@ h2 {
     margin: auto;
     height: 80px;
     width: 100px;
+    border: 1.5px solid brown;
 }
 
 .skill-name {
@@ -261,7 +334,7 @@ h2 {
     text-align: center;
     text-transform: capitalize;
     margin: 30px 0 20px;
-    color: black;
+    color: white;
 }
 
 .skill-info {
@@ -269,7 +342,7 @@ h2 {
     opacity: 0.5;
     font-size: 18px;
     line-height: 25px;
-    color: black;
+    color: white;
 }
 
 .skill-level {
@@ -284,7 +357,7 @@ h2 {
     border-radius: 50%;
     border: 5px solid;
     top: 40px;
-    left: 163px;
+    left: 55%;
 }
 
 .skill-card:nth-child(1) .skill-level {
@@ -326,35 +399,57 @@ h2 {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* project section ******************************************************** */
+
+
 .mb {
-    margin: 50px 20px 10px 305px;
-    border: 3px solid black;
-    border-radius: 10px;
-    width: 1000px;
+    margin: 50px 0px;
+
+    text-align: center;
+    width: 100vw;
     height: 650px;
     position: relative;
     
 }
 
 .mb h1 {
-    margin: 20px 200px 30px 330px;
-    color: black;
+    margin: 200px  0px 100px 0px;
+    text-align: center;
+    color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', ' Geneva', Verdana, sans-serif;
 }
 .project-container {
     width: 95%;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
     color: #fff;
+
 }
 
 .project1{
-    height: 500px;
+    height: 550px;
     width: 250px;
-    margin: 20px;
-    border: 3px solid black;
+    margin: 20 30px;
+    border: 2px solid brown;
     position: relative;
 
 }
@@ -371,7 +466,7 @@ h2 {
     text-align: center;
     text-transform: capitalize;
     margin: 20px 10px;
-    color: black;
+    color: white;
 }
 
 .project-info {
@@ -379,7 +474,7 @@ h2 {
     opacity: 0.5;
     font-size: 18px;
     line-height: 25px;
-    color: black;
+    color: white;
     margin: 0px 10px 5px 10px;
 }
 .online{
@@ -408,6 +503,7 @@ h2 {
 }
 .button:hover{
   background-color: #4fa0ff;
+  transition: 0.1s;
 }
 .use{
     margin: 20px 10px;
@@ -432,18 +528,99 @@ h2 {
 }
 
 
+
+
+
+
+
+
+
+/*certificate section ******************************************************************  */
+
+.mb1 {
+    margin: 50px 0px;
+
+    text-align: center;
+    width: 100vw;
+    height: 650px;
+    position: relative;
+    
+}
+
+.mb1 h1 {
+    margin: 200px  0px 100px 0px;
+    text-align: center;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', ' Geneva', Verdana, sans-serif;
+}
+.certificate-container {
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    color: #fff;
+}
+
+.certificate1{
+    height: 550px;
+    width: 250px;
+    margin: 20 10px;
+    border: 2px solid brown;
+    position: relative;
+    
+
+}
+
+.certificate1-img{
+    display: block;
+    margin: auto;
+    height: 350px;
+    width: 250px;
+  
+}
+
+.cer-name {
+    font-size: 25px;
+    font-weight: 200;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 20px 10px;
+    color: white;
+}
+.online1{
+    margin: 10px 80px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* message section ************************************************ */
+
 .kb {
     display: inline-block;
-    margin: 60px 0px 30px 301px;
-    border: 3px solid black;
-    border-radius: 10px;
-    width: 500px;
+    margin: 60px;
+    text-align: center;
+    border: 1px solid brown;
+    width: 100vw;
     height: 600px;
 
 }
 
 .kb h1 {
-    margin: 20px 100px 50px 180px;
+    margin: 20px 0px;
+    text-align: center;
+    color: white;
 
 }
 
@@ -454,7 +631,7 @@ h2 {
     display: flex;
     background: white;
     border-radius: 5px;
-    border: 2px solid #777;
+    border: 2px solid blueviolet;
     margin: 50px 100px;
 
 }
@@ -473,7 +650,8 @@ h2 {
 }
 
 .field:hover {
-    border: 2px solid violet;
+    border: 2px solid brown;
+    transition: 0.1s;
 }
 
 .space {
@@ -494,8 +672,9 @@ h2 {
     display: flex;
 
     border-radius: 7px;
-    border: 2px solid violet;
-    margin: 50px 180px;
+    border: 2px solid blueviolet;
+    margin: 50px 190px;
+    align-items: center;
     background-color: black;
 
 }
@@ -512,7 +691,9 @@ h2 {
 
 }
 .sum:hover{
-    background-color: #4fa0ff;
+    background-color: brown;
+    border: violet;
+    transition: 0.1s;
 }
 
 .field .fas {
@@ -521,27 +702,37 @@ h2 {
 
 
 .hg {
-    width: 180px;
-    height: 180px;
-    border: 2px solid violet;
-    margin: 40px 0px 0px 60px;
+    width: 70px;
+    height: 70px;
+    border: 1px solid brown;
+    margin: 0px 0px 0px 30px;
     border-radius: 40px;
+    display: flex;
 
 }
 
 nav .fa {
     display: none;
+
 }
 
 .map {
     display: flex;
+    margin: 200px 0px 0px;
 }
 
-.copy {
+.copy{
+    width: 100vw;
+    height: fit-content;
+    background-color: white;
     color: black;
-    margin: 20px 10px 15px 650px;
     font-size: 21px;
+    text-align: center;
+    padding: 10px 8px;
+   
 }
+
+
 .fab{
     margin: 10px 10px 0px 40px;
     color: white;
@@ -557,7 +748,7 @@ nav .fa {
     height: 441px;
     display: flex;
     margin: 130px 60px;
-    border: 3px solid black;
+    border: 3px solid brown;
 }
 
 .gmap_canvas {
@@ -570,4 +761,18 @@ nav .fa {
 .gmap_iframe {
     width: 407px !important;
     height: 441px !important;
+
+}
+.ins1{
+   
+    margin: 20px 0px 0px 575px;
+    
+    width: 255px;
+    font-size: 18px;
+    border-radius: 4px;
+    border: 1px solid brown;
+    text-align: center;
+
+
+
 }
