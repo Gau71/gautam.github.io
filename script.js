@@ -4,7 +4,6 @@ const navToggle = document.getElementById('nav-toggle');
 const navClose = document.getElementById('nav-close');
 const navLinks = document.querySelectorAll('.nav-link');
 
-// Create overlay
 const overlay = document.createElement('div');
 overlay.className = 'nav-overlay';
 document.body.appendChild(overlay);
@@ -99,6 +98,8 @@ let isDeleting = false;
 let typingSpeed = 100;
 
 function typeEffect() {
+    if (!typingElement) return;
+    
     const currentPhrase = phrases[phraseIndex];
     
     if (isDeleting) {
@@ -113,20 +114,19 @@ function typeEffect() {
     
     if (!isDeleting && charIndex === currentPhrase.length) {
         isDeleting = true;
-        typingSpeed = 2000; // Pause at end
+        typingSpeed = 2000;
     } else if (isDeleting && charIndex === 0) {
         isDeleting = false;
         phraseIndex = (phraseIndex + 1) % phrases.length;
-        typingSpeed = 500; // Pause before next
+        typingSpeed = 500;
     }
     
     setTimeout(typeEffect, typingSpeed);
 }
 
-// Start typing effect after a short delay
 setTimeout(typeEffect, 1000);
 
-/* ===== Smooth reveal on scroll (Intersection Observer) ===== */
+/* ===== Smooth reveal on scroll ===== */
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -141,7 +141,6 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe cards for animation
 document.querySelectorAll('.skill-card, .project-card, .certificate-card, .contact-card').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(30px)';
@@ -149,7 +148,6 @@ document.querySelectorAll('.skill-card, .project-card, .certificate-card, .conta
     observer.observe(el);
 });
 
-// Add revealed styles
 const style = document.createElement('style');
 style.textContent = `
     .revealed {

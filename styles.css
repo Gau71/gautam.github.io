@@ -1,36 +1,28 @@
-/* ===== CSS Variables - Amazing Color Palette ===== */
+/* ===== CSS Variables - Premium Dark Theme ===== */
 :root {
-    /* Primary Colors - Deep space with neon accents */
     --bg-primary: #0a0a0f;
     --bg-secondary: #12121a;
     --bg-card: #1a1a25;
     --bg-card-hover: #22222f;
     
-    /* Accent Colors */
-    --accent-primary: #00d4ff;      /* Cyan */
-    --accent-secondary: #7b61ff;    /* Purple */
-    --accent-tertiary: #00ff9d;     /* Neon Green */
+    --accent-primary: #00d4ff;
+    --accent-secondary: #7b61ff;
+    --accent-tertiary: #00ff9d;
     --accent-gradient: linear-gradient(135deg, #00d4ff 0%, #7b61ff 50%, #00ff9d 100%);
     
-    /* Text */
     --text-primary: #ffffff;
     --text-secondary: #b0b0c0;
     --text-muted: #707080;
     
-    /* Borders & Effects */
     --border-color: rgba(0, 212, 255, 0.15);
     --glow-cyan: 0 0 20px rgba(0, 212, 255, 0.3);
     --glow-purple: 0 0 20px rgba(123, 97, 255, 0.3);
     
-    /* Typography */
-    --font-primary: 'Inter', system-ui, sans-serif;
+    --font-primary: 'Inter', system-ui, -apple-system, sans-serif;
     --font-display: 'Poppins', system-ui, sans-serif;
     
-    /* Spacing */
     --header-height: 70px;
     --section-padding: 100px 0;
-    
-    /* Transitions */
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -266,10 +258,11 @@ ul {
     position: absolute;
     inset: 0;
     background: 
-        radial-gradient(ellipse at 20% 50%, rgba(0, 212, 255, 0.08) 0%, transparent 50%),
-        radial-gradient(ellipse at 80% 20%, rgba(123, 97, 255, 0.08) 0%, transparent 50%),
+        radial-gradient(ellipse at 20% 50%, rgba(0, 212, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 20%, rgba(123, 97, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(ellipse at 50% 80%, rgba(0, 255, 157, 0.05) 0%, transparent 50%),
         url('1920x1080-black-w4sh3k4mi3fiygum.jpg') center/cover no-repeat;
-    opacity: 0.6;
+    opacity: 0.7;
     z-index: -1;
 }
 
@@ -306,11 +299,11 @@ ul {
     color: var(--text-secondary);
     margin-bottom: 1.25rem;
     font-weight: 500;
+    min-height: 2.2rem;
 }
 
 .hero-subtitle .typing {
     color: var(--accent-tertiary);
-    position: relative;
 }
 
 .hero-description {
@@ -372,8 +365,9 @@ ul {
     object-fit: cover;
     border-radius: 50%;
     border: 4px solid transparent;
-    background: linear-gradient(var(--bg-primary), var(--bg-primary)) padding-box,
-                var(--accent-gradient) border-box;
+    background: 
+        linear-gradient(var(--bg-primary), var(--bg-primary)) padding-box,
+        var(--accent-gradient) border-box;
     position: relative;
     z-index: 1;
 }
@@ -388,9 +382,23 @@ ul {
     animation: pulse 3s ease-in-out infinite;
 }
 
+.image-ring {
+    position: absolute;
+    inset: -12px;
+    border: 2px dashed rgba(0, 212, 255, 0.3);
+    border-radius: 50%;
+    animation: spin 20s linear infinite;
+    z-index: 0;
+}
+
 @keyframes pulse {
     0%, 100% { opacity: 0.25; transform: scale(1); }
     50% { opacity: 0.4; transform: scale(1.05); }
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
 .scroll-down {
@@ -447,6 +455,22 @@ ul {
     border-radius: 20px;
     z-index: -1;
     opacity: 0.5;
+}
+
+.about-badge {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: var(--accent-gradient);
+    color: #000;
+    padding: 0.6rem 1.2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    box-shadow: var(--glow-cyan);
 }
 
 .about-text h3 {
@@ -570,7 +594,6 @@ ul {
     width: var(--progress);
     background: var(--accent-gradient);
     border-radius: 10px;
-    position: relative;
     animation: fillBar 1.5s ease-out forwards;
 }
 
@@ -635,7 +658,7 @@ ul {
 .project-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(10, 10, 15, 0.8);
+    background: rgba(10, 10, 15, 0.85);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -723,13 +746,16 @@ ul {
     height: 200px;
     overflow: hidden;
     background: var(--bg-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .certificate-image img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    padding: 0.5rem;
+    padding: 0.75rem;
     transition: var(--transition);
 }
 
@@ -1004,6 +1030,12 @@ ul {
     
     .about-image::before {
         display: none;
+    }
+    
+    .about-badge {
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
     }
     
     .about-info {
